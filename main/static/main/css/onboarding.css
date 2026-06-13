@@ -9,9 +9,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
     background: linear-gradient(180deg, var(--y0, #FFF7D1) 0%, #FFF 236.43%);
-
     width: 100%;
     min-height: 100dvh;
 }
@@ -22,6 +20,8 @@
 .subtitle {
     color: #000;
     text-align: center;
+    leading-trim: both;
+    text-edge: cap;
     font-feature-settings: 'dlig' on;
     font-family: "Darker Grotesque";
     font-size: 17px; /* 글씨 크기 조정 15px->17px*/
@@ -31,9 +31,12 @@
     letter-spacing: -0.45px;
 }
 .title {
+    width: 320px;
     height: 39px;
     color: var(--b3, #7DABE1);
     text-align: center;
+    leading-trim: both;
+    text-edge: cap;
     font-feature-settings: 'dlig' on, 'ss05' on, 'cv10' on;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "Darker Grotesque";
