@@ -19,7 +19,7 @@ def new_pot(request):
         return redirect('accounts:login')
     
     user_profile = request.user.profile
-    return render(request, 'pages/create_pot.html', {'user_profile': user_profile})
+    return render(request, 'pages/new_pot.html', {'user_profile': user_profile})
 
 
 def create(request):
